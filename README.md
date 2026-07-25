@@ -5,15 +5,19 @@ This project develops an end-to-end Business Intelligence solution for the Olist
 
 The objective is to transform operational data into business insights that help decision-makers monitor sales performance, evaluate logistics efficiency, understand customer behavior, and identify growth opportunities.
 
-The project simulates the responsibilities of a Business Intelligence Developer / Data Analyst, including:
+## Skills Demonstrated
 
-Data Cleaning & Transformation
-Data Warehouse Design (Star Schema)
-SQL-based ETL
-Power BI Data Modeling
-DAX Measure Development
-Dashboard Design
-Business Insight & Recommendation
+- SQL Server
+- ETL
+- Data Cleaning
+- Data Warehouse
+- Star Schema
+- Power BI
+- DAX
+- Data Visualization
+- Business Intelligence
+- Data Analysis
+
 2. Dataset
 
 The dataset contains over 100,000 e-commerce orders placed on Olist Marketplace in Brazil between 2016 and 2018.
