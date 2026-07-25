@@ -293,8 +293,11 @@ The dashboard enables stakeholders to monitor sales performance, logistics effic
 
 Author
 Giang Dang Ho
- giangdang12378@gmail.com
- github.com/giangdang12378
- https://www.linkedin.com/in/giang-%C4%91%E1%BA%B7ng-h%E1%BB%93-8a7aa0350/
+
+giangdang12378@gmail.com
+
+github.com/giangdang12378
+
+https://www.linkedin.com/in/giang-%C4%91%E1%BA%B7ng-h%E1%BB%93-8a7aa0350/
 
  ⭐ Thanks for reading!
