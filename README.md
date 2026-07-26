@@ -36,6 +36,7 @@ Products
 Product Information
 Product Categories
 Product Category Translation
+
 3. Technology Stack
 Tool	Purpose
 SQL Server	Data Cleaning & ETL
@@ -43,7 +44,49 @@ SQL	Data Transformation
 Power BI	Data Modeling & Dashboard
 DAX	Business Calculations
 GitHub	Project Version Control
-4. Project Structure
+
+🏗️ Solution Architecture
+                +----------------------+
+                |   Raw CSV Dataset    |
+                |   (9 Tables)         |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                |   SQL Server ETL     |
+                | Cleaning & Transform |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                | Star Schema          |
+                | Fact + Dimensions    |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                | Power BI Model       |
+                | Relationships        |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                | DAX Measures         |
+                | KPIs                 |
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                | Interactive Dashboard|
+                +----------+-----------+
+                           |
+                           v
+                +----------------------+
+                | Business Insights    |
+                | Recommendations      |
+                +----------------------+
+                
+5. Project Structure
 Olist-Ecommerce-Analysis
 │
 ├── dataset
@@ -63,7 +106,7 @@ Olist-Ecommerce-Analysis
 │   └── Customer Analysis.png
 │
 └── README.md
-5. Project Workflow
+6. Project Workflow
 
 The project follows a complete BI development process.
 
@@ -92,6 +135,18 @@ Business Insights
         │
         ▼
 Recommendations
+
+✨ Dashboard Features
+------------------------------------------------------------------------------------------------------
+| Module             | Features                                                                      |
+| ------------------ | ----------------------------------------------------------------------------- |
+| Executive Overview | Revenue KPI, Orders KPI, Customer KPI, Revenue Trend, Geographic Distribution |
+| Sales Analysis     | Revenue by Weekday, Quarter Analysis, Category Performance                    |
+| Product & Seller   | Category Performance, Seller Ranking, Revenue Distribution                    |
+| Delivery Analysis  | On-time Delivery Rate, Delivery Days Distribution, Freight Cost Analysis      |
+| Customer Analysis  | Repeat Customer Rate, Monthly Customers, Revenue per Customer by State        |
+------------------------------------------------------------------------------------------------------
+
 5.1 Data Cleaning & Feature Engineering (SQL)
 
 The raw Olist dataset was transformed into an analytical data warehouse.
