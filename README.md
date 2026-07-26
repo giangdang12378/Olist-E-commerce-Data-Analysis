@@ -124,23 +124,6 @@ Olist-Ecommerce-Analysis
                                         Customers, Revenue per Customer
   -----------------------------------------------------------------------
 
-------------------------------------------------------------------------
-
-## 🖼 Dashboard Preview
-
-> Replace the placeholders below with your screenshots.
-
-``` markdown
-![Executive Overview](images/executive-overview.png)
-
-![Sales Analysis](images/sales-analysis.png)
-
-![Product & Seller Performance](images/product-seller-performance.png)
-
-![Delivery Analysis](images/delivery-analysis.png)
-
-![Customer Analysis](images/customer-analysis.png)
-```
 
 ------------------------------------------------------------------------
 
