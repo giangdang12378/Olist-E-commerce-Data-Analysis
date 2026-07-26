@@ -12,7 +12,7 @@ insights for sales, logistics, product, seller, and customer analysis.
 
 ------------------------------------------------------------------------
 
-## 🚀 Skills Demonstrated
+## Skills Demonstrated
 
 -   SQL Server
 -   SQL ETL
@@ -28,7 +28,7 @@ insights for sales, logistics, product, seller, and customer analysis.
 
 ------------------------------------------------------------------------
 
-## 📊 Dataset
+## Dataset
 
 The project uses the **Olist Brazilian E-commerce Public Dataset**,
 containing more than **100,000 orders** between **2016--2018**.
@@ -47,7 +47,7 @@ containing more than **100,000 orders** between **2016--2018**.
 
 ------------------------------------------------------------------------
 
-## 🛠 Technology Stack
+## Technology Stack
 
   Tool         Purpose
   ------------ -------------------------------------
@@ -59,7 +59,7 @@ containing more than **100,000 orders** between **2016--2018**.
 
 ------------------------------------------------------------------------
 
-## 🏗 Solution Architecture
+## Solution Architecture
 
 ``` text
 Raw CSV Dataset (9 Tables)
@@ -158,7 +158,7 @@ Created:
 
 ------------------------------------------------------------------------
 
-## ⭐ Data Warehouse Design
+## Data Warehouse Design
 
 ### Fact Table
 
@@ -209,9 +209,9 @@ Created:
 
 ------------------------------------------------------------------------
 
-## 💡 Key Business Insights & Recommendations
+## Key Business Insights & Recommendations
 
-### 📊 Executive Overview
+### Executive Overview
 
 -   Revenue increased steadily throughout 2017 and peaked in late
     2017--early 2018 with **98,000+ completed orders**.
@@ -225,7 +225,7 @@ Created:
     -   **Recommendation:** Prioritize inventory and promotions for
         these categories.
 
-### 💰 Sales Analysis
+### Sales Analysis
 
 -   Weekday sales outperformed weekends.
     -   **Recommendation:** Launch weekend promotions.
@@ -234,19 +234,19 @@ Created:
 -   A small number of categories generated most revenue.
     -   **Recommendation:** Apply Pareto analysis.
 
-### 📦 Product & Seller
+### Product & Seller
 
 -   Higher order volume correlated with higher revenue.
 -   Seller revenue was concentrated in a few cities.
 -   Some seller regions generated low revenue.
 
-### 🚚 Delivery
+### Delivery
 
 -   Average delivery time was approximately **12 days**.
 -   **92%** of **98,666 orders** were delivered on time.
 -   Some states experienced longer delivery times.
 
-### 👥 Customer
+### Customer
 
 -   Only **10.27%** of **95,420 customers** made repeat purchases.
 -   Customer growth accelerated in 2017 before stabilizing.
@@ -254,7 +254,7 @@ Created:
 
 ------------------------------------------------------------------------
 
-## 🎯 Business Value
+## Business Value
 
 This project demonstrates:
 
