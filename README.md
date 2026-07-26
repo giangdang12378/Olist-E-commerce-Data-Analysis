@@ -1,4 +1,5 @@
 Olist E-commerce Business Intelligence Dashboard
+
 📌 Project Overview
 
 This project presents an end-to-end Business Intelligence solution built on the Olist Brazilian E-commerce Dataset. The project covers the complete analytics workflow, from raw CSV files to an interactive Power BI dashboard, following a modern BI development process.
