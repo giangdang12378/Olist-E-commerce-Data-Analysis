@@ -1,104 +1,79 @@
 Olist E-commerce Business Intelligence Dashboard
-1. Project Overview
+📌 Project Overview
 
-This project develops an end-to-end Business Intelligence solution for the Olist Brazilian E-commerce Dataset, covering the complete analytics workflow from raw transactional data to an interactive Power BI dashboard.
+This project presents an end-to-end Business Intelligence solution built on the Olist Brazilian E-commerce Dataset. The project covers the complete analytics workflow, from raw CSV files to an interactive Power BI dashboard, following a modern BI development process.
 
-The objective is to transform operational data into business insights that help decision-makers monitor sales performance, evaluate logistics efficiency, understand customer behavior, and identify growth opportunities.
+The objective is to transform operational data into actionable business insights that help decision-makers monitor sales performance, optimize logistics, understand customer behavior, and support strategic business decisions.
 
-## Skills Demonstrated
+ Skills Demonstrated
+SQL Server
+SQL ETL
+Data Cleaning
+Data Transformation
+Data Warehouse
+Star Schema Modeling
+Power BI
+DAX
+Data Visualization
+Business Intelligence
+Business Analysis
+📊 Dataset
 
-- SQL Server
-- ETL
-- Data Cleaning
-- Data Warehouse
-- Star Schema
-- Power BI
-- DAX
-- Data Visualization
-- Business Intelligence
-- Data Analysis
+The project uses the Olist Brazilian E-commerce Public Dataset, containing over 100,000 orders placed between 2016 and 2018.
 
-2. Dataset
-
-The dataset contains over 100,000 e-commerce orders placed on Olist Marketplace in Brazil between 2016 and 2018.
-
-It includes information about:
+The dataset includes 9 relational tables:
 
 Customers
 Sellers
-Customer Locations
-Seller Locations
 Orders
 Order Items
-Payments
-Reviews
+Order Payments
+Order Reviews
 Products
-Product Information
-Product Categories
 Product Category Translation
-
-3. Technology Stack
+Geolocation
+🛠 Technology Stack
 Tool	Purpose
-SQL Server	Data Cleaning & ETL
-SQL	Data Transformation
+SQL Server	ETL, Data Cleaning & Transformation
+SQL	Feature Engineering
 Power BI	Data Modeling & Dashboard
-DAX	Business Calculations
-GitHub	Project Version Control
-
-🏗️ Solution Architecture
-                +----------------------+
-                |   Raw CSV Dataset    |
-                |   (9 Tables)         |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                |   SQL Server ETL     |
-                | Cleaning & Transform |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | Star Schema          |
-                | Fact + Dimensions    |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | Power BI Model       |
-                | Relationships        |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | DAX Measures         |
-                | KPIs                 |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | Interactive Dashboard|
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | Business Insights    |
-                | Recommendations      |
-                +----------------------+
-                
-5. Project Structure
+DAX	Business KPI Calculation
+GitHub	Version Control
+ Solution Architecture
+                 Raw CSV Dataset (9 Tables)
+                         │
+                         ▼
+                 SQL Server ETL
+           Cleaning & Transformation
+                         │
+                         ▼
+                 Star Schema Design
+             (1 Fact + 4 Dimensions)
+                         │
+                         ▼
+               Power BI Data Model
+                         │
+                         ▼
+                 DAX Measure Library
+                         │
+                         ▼
+              Interactive BI Dashboard
+                         │
+                         ▼
+         Business Insights & Recommendations
+ Project Structure
 Olist-Ecommerce-Analysis
 │
 ├── dataset
 │   └── dataset.md
 │
-├── SQL
+├── sql
 │   └── DataWarehouse.sql
 │
-├── Power BI
-│   └── Olist E-commerce Analysis Dashboard.md
+├── power bi
+│   └── Olist Dashboard.pbix
 │
-├── Images
+├── images
 │   ├── Executive Overview.png
 │   ├── Sales Analysis.png
 │   ├── Product & Seller Performance.png
@@ -106,55 +81,22 @@ Olist-Ecommerce-Analysis
 │   └── Customer Analysis.png
 │
 └── README.md
-6. Project Workflow
-
-The project follows a complete BI development process.
-
-Raw CSV Files
-        │
-        ▼
-SQL Data Cleaning
-        │
-        ▼
-Feature Engineering
-        │
-        ▼
-Star Schema Modeling
-        │
-        ▼
-Power BI Data Model
-        │
-        ▼
-DAX Measures
-        │
-        ▼
-Dashboard Development
-        │
-        ▼
-Business Insights
-        │
-        ▼
-Recommendations
-
 ✨ Dashboard Features
-------------------------------------------------------------------------------------------------------
-| Module             | Features                                                                      |
-| ------------------ | ----------------------------------------------------------------------------- |
-| Executive Overview | Revenue KPI, Orders KPI, Customer KPI, Revenue Trend, Geographic Distribution |
-| Sales Analysis     | Revenue by Weekday, Quarter Analysis, Category Performance                    |
-| Product & Seller   | Category Performance, Seller Ranking, Revenue Distribution                    |
-| Delivery Analysis  | On-time Delivery Rate, Delivery Days Distribution, Freight Cost Analysis      |
-| Customer Analysis  | Repeat Customer Rate, Monthly Customers, Revenue per Customer by State        |
-------------------------------------------------------------------------------------------------------
+Dashboard	Features
+Executive Overview	Revenue KPI, Orders KPI, Customers KPI, Revenue Trend, Geographic Distribution
+Sales Analysis	Revenue by Weekday, Quarter Analysis, Category Performance
+Product & Seller	Category Performance, Seller Ranking, Revenue Distribution
+Delivery Analysis	On-time Delivery Rate, Delivery Days Distribution, Freight Cost Analysis
+Customer Analysis	Repeat Customer Rate, Monthly Customers, Revenue per Customer
 
-5.1 Data Cleaning & Feature Engineering (SQL)
+⚙ Data Cleaning & Feature Engineering
 
-The raw Olist dataset was transformed into an analytical data warehouse.
+The raw dataset was transformed into a business-ready analytical data warehouse.
 
 Data Cleaning
 Removed duplicate records
 Standardized data types
-Handled NULL values
+Handled missing values
 Removed inconsistent records
 Feature Engineering
 
@@ -169,14 +111,16 @@ Average Order Value
 Order Status
 Date Dimension
 
-Built a Date Dimension supporting:
+A dedicated Date Dimension was created to support Time Intelligence analysis.
+
+Included:
 
 Year
 Quarter
 Month
 Weekday
 Year-Month
-5.2 Data Warehouse Modeling
+⭐ Data Warehouse Design
 
 The project follows a Star Schema.
 
@@ -187,17 +131,13 @@ Dim_Customer
 Dim_Product
 Dim_Seller
 Dim_Date
-
-This model improves:
-
-Query performance
-Scalability
+Benefits
+Faster analytical queries
+Better scalability
 Simpler DAX calculations
-5.3 DAX Measure Library
+📈 DAX Measure Library
 
-Business KPIs were created using DAX.
-
-Examples include:
+More than 15 business measures were developed.
 
 Sales
 Total Revenue
@@ -205,7 +145,7 @@ Total Orders
 Total Customers
 Average Order Value
 Product
-Total Products Sold
+Products Sold
 Total Categories
 Average Revenue per Seller
 Delivery
@@ -217,12 +157,11 @@ Average Orders per Customer
 Average Revenue per Customer
 Repeat Customers
 Repeat Customer Rate
-
-6. Key Business Insights & Recommendations
-6.1. Executive Overview
+💡 Key Business Insights & Recommendations
+📊 Executive Overview
 Insight 1
 
-Revenue increased steadily throughout 2017 and reached its highest level during late 2017 and early 2018.
+Revenue increased steadily throughout 2017, reaching its highest level during late 2017 and early 2018, with more than 98,000 completed orders processed.
 
 Recommendation
 
@@ -230,129 +169,136 @@ Increase inventory and marketing investment before peak demand periods to maximi
 
 Insight 2
 
-A small number of states, particularly São Paulo (SP), contribute a significant share of total revenue.
+São Paulo (SP) contributed the largest share of platform revenue, indicating strong geographic concentration.
 
 Recommendation
 
-Continue strengthening operations in high-performing states while expanding marketing efforts into underpenetrated regions to diversify revenue sources.
+Maintain market leadership in high-performing regions while expanding marketing efforts into underpenetrated states.
 
 Insight 3
 
-Health & Beauty, Watches & Gifts, and Bed & Bath Table consistently generate the highest revenue.
+Health & Beauty, Watches & Gifts, and Bed & Bath Table consistently generated the highest revenue.
 
 Recommendation
 
-Prioritize inventory availability, promotional campaigns, and supplier partnerships for these top-performing categories.
+Prioritize inventory planning and promotional campaigns for these high-performing categories.
 
-6.2. Sales Analysis
+💰 Sales Analysis
 Insight 1
 
-Sales performance varies across weekdays, with stronger revenue concentrated on weekdays than weekends.
+Sales performance was stronger on weekdays than weekends.
 
 Recommendation
 
-Launch weekend promotions and targeted campaigns to improve weekend sales performance.
+Launch weekend promotions to increase customer engagement and sales.
 
 Insight 2
 
-Revenue is unevenly distributed across quarters.
+Revenue showed clear seasonal fluctuations across quarters.
 
 Recommendation
 
-Plan seasonal marketing campaigns based on historical purchasing trends and prepare inventory ahead of high-demand periods.
+Prepare inventory and marketing campaigns before peak shopping periods.
 
 Insight 3
 
-A relatively small number of product categories generate most of the platform revenue.
+A relatively small number of product categories generated most platform revenue.
 
 Recommendation
 
-Apply Pareto analysis to prioritize investment in high-performing categories while reviewing low-performing products.
+Apply Pareto analysis to prioritize investment in top-performing categories.
 
-6.3. Product & Seller Performance
+📦 Product & Seller Performance
 Insight 1
 
-Higher order volume generally leads to higher revenue across product categories.
+Higher order volume strongly correlated with higher category revenue.
 
 Recommendation
 
-Increase marketing support for high-potential categories capable of scaling order volume.
+Increase marketing investment in scalable product categories.
 
 Insight 2
 
-Seller revenue is highly concentrated in a few cities.
+Seller revenue was highly concentrated in a few cities.
 
 Recommendation
 
-Expand seller recruitment programs in regions with lower seller representation to reduce dependency on major cities.
+Expand seller recruitment in underrepresented regions.
 
 Insight 3
 
-Several seller cities contribute minimal revenue.
+Several seller cities generated relatively low revenue.
 
 Recommendation
 
-Review seller performance, improve onboarding support, or consolidate underperforming seller regions.
+Review seller performance and improve onboarding support.
 
-6.4. Delivery Analysis
+🚚 Delivery Analysis
 Insight 1
 
-Most orders are delivered within approximately one to two weeks.
+Most orders were delivered within 1–2 weeks, with an average delivery time of approximately 12 days.
 
 Recommendation
 
-Maintain current logistics standards while focusing improvement efforts on long-tail deliveries.
+Maintain current logistics performance while reducing long-tail delivery delays.
 
 Insight 2
 
-Approximately 92% of orders are delivered on time.
+Approximately 92% of 98,666 orders were delivered on time.
 
 Recommendation
 
-Investigate recurring causes of delayed deliveries and optimize logistics routes to further improve customer satisfaction.
+Analyze recurring causes of delayed deliveries and optimize logistics routes.
 
 Insight 3
 
-Certain states experience significantly longer delivery times.
+Certain states experienced noticeably longer delivery times.
 
 Recommendation
 
-Evaluate warehouse locations, shipping partners, and regional logistics strategies for these areas.
+Evaluate warehouse locations and regional shipping partners.
 
-6.5. Customer Analysis
+👥 Customer Analysis
 Insight 1
 
-Only 10.27% of customers placed more than one order.
+Only 10.27% of 95,420 customers made more than one purchase.
 
 Recommendation
 
-Develop customer retention strategies such as loyalty programs, personalized email campaigns, and post-purchase incentives to increase repeat purchases.
+Implement customer retention initiatives such as loyalty programs, personalized email campaigns, and post-purchase incentives.
 
 Insight 2
 
-Customer growth increased significantly throughout 2017 before stabilizing in 2018.
+Customer acquisition grew rapidly throughout 2017 before stabilizing in 2018.
 
 Recommendation
 
-Focus on customer retention alongside acquisition to sustain long-term business growth.
+Focus on improving customer retention to sustain long-term growth.
 
 Insight 3
 
-Average customer revenue differs noticeably across states.
+Average customer revenue varied significantly across states.
 
 Recommendation
 
-Allocate marketing budgets toward regions with higher customer lifetime value while developing localized campaigns for lower-performing regions.
+Allocate marketing budgets toward regions with higher customer lifetime value while developing localized campaigns for lower-performing markets.
 
-The dashboard enables stakeholders to monitor sales performance, logistics efficiency, product performance, and customer behavior through a unified analytical platform.
+🎯 Business Value
 
-Author
+This project demonstrates an end-to-end Business Intelligence workflow:
+
+Data Cleaning & ETL using SQL Server
+Data Warehouse Design with Star Schema
+Interactive Dashboard Development using Power BI
+Business KPI Development using DAX
+Business Insight Generation
+Data-driven Decision Support
+👨‍💻 Author
+
 Giang Dang Ho
 
-giangdang12378@gmail.com
+📧 Email: giangdang12378@gmail.com
 
-github.com/giangdang12378
+💼 LinkedIn: https://www.linkedin.com/in/giang-đặng-hồ-8a7aa0350/
 
-https://www.linkedin.com/in/giang-%C4%91%E1%BA%B7ng-h%E1%BB%93-8a7aa0350/
-
- ⭐ Thanks for reading!
+🐙 GitHub: https://github.com/giangdang12378
